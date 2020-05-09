@@ -66,6 +66,7 @@ def filter_messages(username, password, searchword):
         # de lijst wordt returned. In het html document staat de code voor het weergeven van de rijen
         return return_list, result_number, ""
     except mysql.connector.Error as err:
+        # wanneer er iets fout gaat, geef ik een error message
         return "", "", "Looks like something went wrong. Please login first with a valid username and password before" \
                        " firing a search request"
 

@@ -18,10 +18,7 @@
                 <input type="password" name="password" value="{{ request.form['password'] }}">
             </label>
         </p>
-
         <hr>
-     <!-- misschien hier één form van maken -->
-
         <p>
         <label> Search on:
             <input type="text" name="searchword" value="{{ request.form['searchword'] }}">
@@ -45,7 +42,7 @@
         <b>{{  "By: " + row[3]}}</b> {{ row[1] + " " + row[2] }}
     {% endfor %}
     {% endif %}
-    <!-- Wanneer er iets fout gaat, dan wordt er een algemen error gegeven -->
+    <!-- Wanneer er iets fout gaat, dan wordt er een algemene error gegeven -->
     {% if errors %}
             <h4>{{ errors }}</h4>
     {% endif %}
